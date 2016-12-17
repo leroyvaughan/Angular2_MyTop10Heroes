@@ -1,0 +1,20 @@
+
+<div class="wrapper">
+	<h3>Because there are four points of the cross, here are my top four heroes of all time, forever...</h3>
+
+	<div class="grid grid-pad">
+		<div *ngFor="let hero of heroes" class="col-xs-3">
+			<a [routerLink]="['/detail', hero.id]">
+				<img src="/app/assets/img/{{hero.Image}}.jpg" alt="" />
+
+				<span>{{hero.ImgText}}</span>
+			</a>
+		</div>
+
+	    <section *ngIf="errorMessage">
+	      {{errorMessage}}
+	    </section>
+
+	</div>
+	<!-- <hero-search></hero-search> -->
+</div>

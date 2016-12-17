@@ -1,0 +1,99 @@
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+  font-family: Arial;
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc; 
+  cursor: auto;
+}
+
+
+
+.selected {
+    background-color: #2090c1 !important;
+    color: white;
+}
+.hero-detail{
+  border-radius: 7px;
+  margin: 32px 0 0;
+  padding: 0 12px 12px;
+}
+.hero-detail h2{
+  color: #2090c1;
+}
+.desc{
+  color:#999;
+}
+.imgText{
+    color: #65a517;
+    font-style: italic;
+    margin: 12px 0;
+}
+.hero-detail img{
+  box-shadow: 1px 1px 2px #777;
+  border-radius: 10px;
+  margin: 7px 0;
+}
+.innerWrap{
+  text-align: left;
+  max-width: 550px;
+}
+
+
+
+
+
+
+.heroes {
+  list-style-type: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+  width: 15em;
+}
+.heroes li {
+  background-color: #EEE;
+  border-radius: 4px;
+  cursor: pointer;
+  left: 0;
+  margin: 7px 0;
+  overflow: hidden;
+  padding: 12px 0;
+  position: relative;
+}
+.heroes li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.heroes li:hover {
+  background-color: #DDD;
+  color: #607D8B;
+  left: .1em;
+}
+
+.rank{
+    background-color: #777;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px 7px 0px;
+    position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    text-align: center;
+    width: 38px;
+}
+.name{
+  margin-left: 42px;
+
+}

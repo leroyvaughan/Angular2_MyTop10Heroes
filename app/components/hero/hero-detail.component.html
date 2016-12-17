@@ -1,0 +1,38 @@
+<div class="col-sm-12">
+	<section *ngIf="errorMessage">
+	  {{errorMessage}}
+	</section>
+</div>
+
+
+<!-- HEROES LIST NAV -->
+<div class="col-sm-4">
+	<h3>My Top 10 Heroes</h3>
+	<section *ngIf="heroesLoading && !errorMessage">
+	    Retrieving heroes list...
+	</section>
+
+	<ul class="heroes">
+	  <li *ngFor="let hero of heroes" 
+	    	[class.selected]="hero.id === selectedHero.id"
+	    	(click)="onSelect(hero)">
+	    <span class="rank"># {{hero.Rank}}</span> 
+	    <span class="name">{{hero.Name}}</span>
+	  </li>
+	</ul>
+</div>
+
+<!-- HERO DETAIL -->
+<div *ngIf="hero" class="hero-detail col-sm-8">
+	<div class="innerWrap">
+		<h2>{{hero.Name}} is my #{{hero.Rank}} hero!!!</h2>
+
+		<p class="desc">{{hero.Description}}</p>
+
+		<div class="text-center">
+			<img src="/app/assets/img/{{hero.Image}}.jpg" alt="" />
+		</div>
+
+		<p class="imgText">{{hero.ImgText}}</p>
+	</div>
+</div>
