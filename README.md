@@ -16,3 +16,9 @@ Heroes Quickstart Tutorial (modified) to display my Top Ten Heroes
  
  *if you want to have those original features use this one instead --> https://github.com/leroyvaughan/Angular2_Quickstart-Heroes
 
+###TO VIEW/USE THIS:
+ - git clone or download zip
+ - git bash... 
+ -- cd to app directory
+ - npm install
+ - npm start
